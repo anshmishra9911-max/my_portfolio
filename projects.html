@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Ansh Mishra</title>
+<meta name="description" content="Selected projects by Ansh Mishra.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loaded">
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__logo" href="index.html" aria-label="Ansh Mishra, home">Ansh Mishra<span>.</span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">Menu</button>
+    <ul class="nav__links" id="menu">
+      <li><a class="link" href="index.html">Home</a></li>
+      <li><a class="link" href="about.html">About</a></li>
+      <li><a class="link" href="projects.html" aria-current="page">Projects</a></li>
+      <li><a class="link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Work</p>
+      <h1>Things I've built.</h1>
+      <p class="lead" style="margin-top:20px">Tap a card for the details.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="grid">
+        <article class="project-card reveal">
+          <button class="project-card__btn" data-title="VoidVeil: Invisibility Cloak" data-long="A browser version of the classic invisibility cloak. It captures the background, then replaces any chosen cloak colour with it in real time. Works on phone and PC and runs fully on-device, so no video leaves the browser." data-tags="OpenCV, JavaScript, Canvas, HTML/CSS" data-link="[YOUR LINK]">
+            <div class="project-card__thumb"><img src="assets/project-1.png" alt="VoidVeil invisibility cloak running in the browser" loading="lazy" onerror="this.remove()"><div class="project-card__overlay">View Project →</div></div>
+            <div class="project-card__body"><h3>VoidVeil: Invisibility Cloak</h3><p>Real-time colour-keyed cloak that runs in the browser.</p>
+              <ul class="tags"><li>OpenCV</li><li>JavaScript</li><li>Canvas</li></ul></div>
+          </button>
+        </article>
+        <article class="project-card reveal" style="--d:.1s">
+          <button class="project-card__btn" data-title="[PROJECT 2]" data-long="[PROJECT 2 LONG DESCRIPTION]" data-tags="[TAG 1], [TAG 2], [TAG 3]" data-link="[YOUR LINK]">
+            <div class="project-card__thumb"><img src="assets/project-2.png" alt="[PROJECT 2] thumbnail" loading="lazy" onerror="this.remove()"><div class="project-card__overlay">View Project →</div></div>
+            <div class="project-card__body"><h3>PROJECT 2</h3><p>Project Coming Soon</p>
+              <ul class="tags"><li>[TAG 1]</li><li>[TAG 2]</li><li>[TAG 3]</li></ul></div>
+          </button>
+        </article>
+        <article class="project-card reveal">
+          <button class="project-card__btn" data-title="[PROJECT 3]" data-long="[PROJECT 3 LONG DESCRIPTION]" data-tags="[TAG 1], [TAG 2], [TAG 3]" data-link="[YOUR LINK]">
+            <div class="project-card__thumb"><img src="assets/project-2.png" alt="[PROJECT 3] thumbnail" loading="lazy" onerror="this.remove()"><div class="project-card__overlay">View Project →</div></div>
+            <div class="project-card__body"><h3>PROJECT 3</h3><p>Project Coming Soon]</p>
+              <ul class="tags"><li>[TAG 1]</li><li>[TAG 2]</li><li>[TAG 3]</li></ul></div>
+          </button>
+        </article>
+        <article class="project-card reveal" style="--d:.1s">
+          <button class="project-card__btn" data-title="[PROJECT 4]" data-long="[PROJECT 4 LONG DESCRIPTION]" data-tags="[TAG 1], [TAG 2], [TAG 3]" data-link="[YOUR LINK]">
+            <div class="project-card__thumb"><img src="assets/project-2.png" alt="[PROJECT 4] thumbnail" loading="lazy" onerror="this.remove()"><div class="project-card__overlay">View Project →</div></div>
+            <div class="project-card__body"><h3>PROJECT 4</h3><p>Project Coming Soon</p>
+              <ul class="tags"><li>[TAG 1]</li><li>[TAG 2]</li><li>[TAG 3]</li></ul></div>
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog class="modal" id="project-modal" aria-labelledby="m-title">
+  <button class="modal__close" aria-label="Close project details">✕</button>
+  <h2 id="m-title"></h2>
+  <p id="m-desc"></p>
+  <ul class="tags" id="m-tags"></ul>
+  <a class="btn btn--solid" id="m-link" href="#" target="_blank" rel="noopener">View Project →</a>
+</dialog>
+
+<footer class="footer"><div class="container"><span>© <span id="year">2026</span> Ansh Mishra</span><span>Lucknow, India</span></div></footer>
+
+<div class="cookie" role="dialog" aria-label="Cookie consent" hidden>
+  <p>This site uses a small amount of local storage to remember your choice. No tracking.</p>
+  <div><button class="btn" data-cookie="declined">Decline</button><button class="btn btn--solid" data-cookie="accepted">Accept</button></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
